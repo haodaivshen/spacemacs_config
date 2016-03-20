@@ -1,0 +1,3 @@
+# spacemacs_config
+
+.spacemacs
