@@ -172,5 +172,19 @@ before layers configuration."
 layers configuration."
 )
 
+(defun dotspacemacs/user-init ()
+  "Initialization function for user code.
+It is called immediately after `dotspacemacs/init'.  You are free to put almost any
+user code here.  The exception is org related code, which should be placed in
+`dotspacemacs/user-config'."
+  (setq configuration-layer--elpa-archives
+        '(
+          ("popkit" . "elpa.popkit.org/packages/")
+          ;;("melpa" . "melpa.org/packages/")
+          ;;("org"   . "orgmode.org/elpa/")
+          ;;("gnu"   . "elpa.gnu.org/packages/")
+          ))
+  )
+
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
